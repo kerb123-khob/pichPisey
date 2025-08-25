@@ -6,7 +6,9 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import ShopContextProvider from "./context/ShopContext.jsx";
 
 createRoot(document.getElementById("root")).render(
-  <ShopContextProvider>
-    <App />
-  </ShopContextProvider>
+  <StrictMode>
+    <ShopContextProvider>
+      <App />
+    </ShopContextProvider>
+  </StrictMode>
 );
