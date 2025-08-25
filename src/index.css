@@ -1,0 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Battambang:wght@100;300;400;700;900&family=Freehand&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Battambang", system-ui;
+  font-weight: bold !important;
+}
+.page-container {
+  width: 95%;
+  margin: 0 auto;
+}

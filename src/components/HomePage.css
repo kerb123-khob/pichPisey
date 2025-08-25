@@ -1,0 +1,111 @@
+.header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  height: 54px;
+  background-color: white;
+  border-bottom: 0.5px dashed #ccc;
+}
+.box-heart {
+  width: 70%;
+  margin: 0 auto;
+  height: 100%;
+  background-image: url("../assets/heart.svg"), url("../assets/heart.svg"),
+    url("../assets/heart.svg"), url("../assets/heart.svg"),
+    url("../assets/heart.svg"), url("../assets/heart.svg"),
+    url("../assets/heart.svg");
+  background-repeat: repeat-y;
+  background-size: 24px 80px;
+  background-position: 0 -28px, 40px 12px, 80px -28px, 120px 12px, 160px -28px,
+    200px 12px, 240px -28px;
+}
+.shop-name {
+  font-weight: bold;
+  color: rgb(240, 117, 170);
+}
+i {
+  font-size: 23px;
+  cursor: pointer;
+}
+.slide {
+  width: 90%;
+  margin: 0 auto;
+}
+.products {
+  width: 100%;
+}
+.products .box-products {
+  width: 100%;
+  height: auto;
+  border: 1px solid #ccc;
+  padding: 7px;
+  border-radius: 10px;
+}
+.products .box-products .img {
+  width: 100%;
+  height: 70%;
+}
+.products .box-products .img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.products .box-products .add-btn {
+  width: 100%;
+  background-color: rgb(240, 117, 170);
+  color: white;
+  font-weight: bold;
+}
+.products .box-products .product-info h3 {
+  font-weight: bold;
+}
+.products .box-products .product-info .price {
+  color: rgb(240, 117, 170);
+}
+.fa-bag-shopping {
+  position: relative;
+}
+.totalcart {
+  position: absolute;
+  top: 30px;
+  right: -10px;
+  background-color: red;
+  color: white;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.content-box {
+  border-radius: 10px;
+  background-color: aliceblue;
+}
+.content-box .img-content {
+  width: 100%;
+  height: 100%;
+}
+.content-box .img-content img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.telegram {
+  font-size: 20px;
+  color: black;
+}
+.telegram .fa-telegram {
+  font-size: 18px;
+  color: rgb(6, 165, 228);
+}
+.footer-logo {
+  width: 40px;
+  height: 20px;
+}
+.footer-logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
