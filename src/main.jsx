@@ -6,9 +6,9 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import ShopContextProvider from "./context/ShopContext.jsx";
 
 createRoot(document.getElementById("root")).render(
-  <React.StrictMode>
+  <StrictMode>
     <ShopContextProvider>
       <App />
     </ShopContextProvider>
-  </React.StrictMode>
+  </StrictMode>
 );
