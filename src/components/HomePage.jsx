@@ -14,16 +14,17 @@ import { Navigation, Pagination, Autoplay } from "swiper/modules";
 import { ShopContext } from "../context/ShopContext";
 const HomePage = () => {
   const { getTotalCartBadge } = useContext(ShopContext);
-  const [visible, setVisible] = useState(false);
-  const toggleCart = () => {
-    setVisible((prev) => !prev); // This flips the value: true ⇄ false
+  const [cartOpen, setCartOpen] = useState(false);
+
+  const handlePageClick = () => setCartOpen(false);
+  const handleCartIconClick = (e) => {
+    e.stopPropagation(); // Prevent closing when clicking the icon
+    setCartOpen((prev) => !prev);
   };
-  const closeCart = () => {
-    setVisible(false);
-  };
+
   return (
     <div>
-      <div className="page-container">
+      <div className="page-container" onClick={handlePageClick}>
         <div className="row">
           <div className="col-lg-3">
             <div className="box-heart"></div>
@@ -35,7 +36,7 @@ const HomePage = () => {
                 <h3 className="shop-name mb-0">Pich Pisey Shop</h3>
                 <i
                   className="fa-solid fa-bag-shopping"
-                  onClick={() => toggleCart()}
+                  onClick={handleCartIconClick}
                 ></i>
                 <div className="totalcart">{getTotalCartBadge()}</div>
               </div>
@@ -83,7 +84,7 @@ const HomePage = () => {
               <Products />
               <h3 className="d-flex justify-content-center mt-3">មាតិកា</h3>
               <Content />
-            </div>{" "}
+            </div>
             <br />
             <Footer />
           </div>
@@ -92,7 +93,7 @@ const HomePage = () => {
           </div>
         </div>
       </div>
-      <ViewCart addClass={visible} />
+      <ViewCart addClass={cartOpen} />
     </div>
   );
 };
