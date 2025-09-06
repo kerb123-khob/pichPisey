@@ -109,3 +109,29 @@ i {
   height: 100%;
   object-fit: contain;
 }
+@media (max-width: 576px) {
+  .box-heart {
+    display: none;
+  }
+  .header {
+    width: 100%;
+    padding: 10px 30px;
+  }
+  .totalcart {
+    right: 20px;
+  }
+  .phone,
+  .telegram,
+  .copy-right,
+  .fa-telegram,
+  .accept-payment {
+    font-size: 15px;
+  }
+  .fa-telegram {
+    margin-right: 10px;
+  }
+  .footer-logo {
+    width: 30px;
+    overflow: hidden;
+  }
+}

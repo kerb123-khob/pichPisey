@@ -65,7 +65,7 @@ const ViewCart = ({ addClass }) => {
                     <i className="fa-solid fa-plus"></i>
                   </button>
                   <button
-                    className="btn btn-danger d-flex justify-content-center align-items-center qty-btn me-3"
+                    className="btn btn-danger d-flex justify-content-center align-items-center qty-btn me-2"
                     onClick={() => deletePro(el.id)}
                   >
                     <i

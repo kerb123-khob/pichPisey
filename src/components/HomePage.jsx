@@ -29,7 +29,7 @@ const HomePage = () => {
           <div className="col-lg-3">
             <div className="box-heart"></div>
           </div>
-          <div className="col-lg-6 p-0">
+          <div className="col-lg-6 col-sm-12 col-12 p-0">
             <div className="header">
               <div className="d-flex justify-content-between align-items-center h-100">
                 <i className="fa-solid fa-bars"></i>

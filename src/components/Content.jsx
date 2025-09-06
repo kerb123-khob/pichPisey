@@ -8,7 +8,7 @@ const Content = () => {
           {content.map((item, index) => {
             return (
               <div
-                className="col-lg-4 col-md-6 col-sm-12 col-12  p-2"
+                className="col-lg-4 col-md-6 col-sm-6 col-12  p-2"
                 key={index}
               >
                 <div className="img-content">

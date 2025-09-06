@@ -15,7 +15,7 @@ const Products = () => {
         <div className="row">
           {productData.map((item, index) => (
             <div
-              className="col-4 col-xl-4 col-lg-6 col-md-6 col-sm-12 mb-4"
+              className="col-6 col-xl-4 col-lg-6 col-md-6 col-sm-6 col-xs-6 mb-4"
               key={index}
             >
               <div className="box-products">

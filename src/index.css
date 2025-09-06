@@ -10,3 +10,10 @@
   width: 95%;
   margin: 0 auto;
 }
+@media (max-width: 576px) {
+  .page-container {
+    width: 100%;
+    overflow: hidden;
+    padding: 20px;
+  }
+}
